@@ -23,7 +23,7 @@ This is a real-time Weather App built with React. It fetches current weather and
 
 1. Clone the repository:
    ```bash
-   git clone <https://github.com/Yussif20/weather-app>
+   git clone <https://github.com/muayadhaddad59/Weather-app.git>
    cd weather-app
    ```
 ````

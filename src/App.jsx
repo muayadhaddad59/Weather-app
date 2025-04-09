@@ -8,7 +8,7 @@ import Weather from './pages/Weather';
 import Forecast from './pages/Forecast';
 
 function App() {
-  const [city, setCity] = useState('Cairo'); // Default city
+  const [city, setCity] = useState('Toronto'); // Default city
   const [weatherData, setWeatherData] = useState(null);
   const [forecastData, setForecastData] = useState(null);
 
@@ -19,12 +19,12 @@ function App() {
     const fetchDefaultData = async () => {
       try {
         const weatherRes = await axios.get(
-          `https://api.openweathermap.org/data/2.5/weather?q=Cairo&appid=${API_KEY}&units=metric`
+          `https://api.openweathermap.org/data/2.5/weather?q=Toronto&appid=${API_KEY}&units=metric`
         );
         setWeatherData(weatherRes.data);
 
         const forecastRes = await axios.get(
-          `https://api.openweathermap.org/data/2.5/forecast?q=Cairo&appid=${API_KEY}&units=metric`
+          `https://api.openweathermap.org/data/2.5/forecast?q=Toronto&appid=${API_KEY}&units=metric`
         );
         setForecastData(forecastRes.data);
       } catch (error) {
