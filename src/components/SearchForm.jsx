@@ -13,7 +13,7 @@ function SearchForm({ setCity, setWeatherData, setForecastData }) {
 
     // Check if the input is empty
     if (!input.trim()) {
-      setErrorMessage('The field is empty'); // Updated to English
+      setErrorMessage('The field is empty'); 
       return;
     }
 
@@ -36,7 +36,7 @@ function SearchForm({ setCity, setWeatherData, setForecastData }) {
       console.error('Error fetching weather data:', error);
       setWeatherData(null);
       setForecastData(null);
-      setErrorMessage('There is an error in the name or nothing matches'); // Updated to English
+      setErrorMessage('There is an error in the name or nothing matches'); 
     }
   };
 
@@ -51,7 +51,7 @@ function SearchForm({ setCity, setWeatherData, setForecastData }) {
           value={input}
           onChange={(e) => {
             setInput(e.target.value);
-            setErrorMessage(''); // Clear error message when user types
+            setErrorMessage(''); 
           }}
           placeholder="Enter city name"
           className="p-3 w-full bg-white bg-opacity-20 border border-white border-opacity-30 rounded-lg text-gray-800 placeholder-white placeholder-opacity-70 focus:outline-none focus:ring-2 focus:ring-yellow-400 backdrop-blur-sm"
