@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-# POS-System-UIKit
-# POS-System-UIKit
-# POS-System-UIKit
-=======
 ````markdown
 # Weather App
 
@@ -81,9 +76,3 @@ If you want to use your own API key:
 - The app fetches weather data for "Cairo" by default on load using `useEffect`.
 - Custom icons are used to represent weather conditions (sun, cloudy, clouds, rain).
 - The design is inspired by a modern weather app UI with a dark gradient background and glassmorphism cards.
->>>>>>> 9a2fe0c (first commit)
-# Weather-app
-# Weather-app
-# Weather-app
-# Weather-app
-# Weather-app

@@ -13,9 +13,8 @@ function WeatherDisplay({ data, type }) {
     );
   }
 
-  // Function to map weather description to the appropriate local icon
   const getWeatherIcon = (description) => {
-    if (!description) return sunIcon; // Default to sun if no description
+    if (!description) return sunIcon;
 
     const desc = description.toLowerCase();
     if (desc.includes('clear')) return sunIcon;
@@ -25,7 +24,7 @@ function WeatherDisplay({ data, type }) {
       return cloudsIcon;
     if (desc.includes('rain') || desc.includes('shower')) return rainIcon;
 
-    return sunIcon; // Fallback icon
+    return sunIcon;
   };
 
   if (type === 'current') {
